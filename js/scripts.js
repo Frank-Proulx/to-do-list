@@ -1,4 +1,8 @@
-function Task(description, complete) {
+function Task(description) {
   this.description = description;
-  this.complete = complete;
+  this.complete = false;
 }
+
+Task.prototype.completeTask = function() {
+  this.complete = true;
+};

@@ -49,18 +49,27 @@ ToDoList
     getCompletedTasks()
     getUncompletedTasks()
     assignId()
+    addTask()
+    removeTask()
 Task
   Properties
     Complete (bool)
     Description (string)
     id (int)
-    
+
   Methods
     completeTask()
 
 ### Describe: Task()
 Test: It should return an object with properties of complete (bool), description (string)
 Code: 
-    let task1 = new Task("ToDo", false);
+    let task1 = new Task("ToDo");
     task1.description;
 Result: "ToDo"
+
+### Describe Task.prototype.completeTask()
+Test: It should update the status of complete from a bool of false to a bool of true
+Code: 
+    task1.completeTask()
+    task1.complete;
+Result: "true"
