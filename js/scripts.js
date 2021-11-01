@@ -9,5 +9,10 @@ Task.prototype.completeTask = function() {
 
 function ToDoList() {
   this.tasks = {};
+  this.currentId = 0;
 }
 
+ToDoList.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
+};
