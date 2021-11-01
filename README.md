@@ -90,7 +90,7 @@ Code:
     task1.id;
 Result: 1
 
-### Describe: addTask()
+### Describe: ToDoList.prototype.addTask()
 Test: It should add the given task to the to do list
 Code: 
     let todo = new ToDoList();
@@ -98,3 +98,9 @@ Code:
     todo.tasks;
 Result: {id: task}
 
+### Describe: ToDoList.prototype.removeTask()
+Test: It should remove the task from the to do list
+Code:
+    todo.removeTask("task1");
+    todo.tasks;
+Result: {}

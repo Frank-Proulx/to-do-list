@@ -21,3 +21,11 @@ ToDoList.prototype.addTask = function(task) {
   task.id = this.assignId();
   this.tasks[task.id] = task;
 };
+
+ToDoList.prototype.removeTask = function(id) {
+  if (this.tasks[id] === undefined) {
+    return false;
+  }
+  delete this.tasks[id];
+  return true;
+};
