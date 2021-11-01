@@ -41,16 +41,17 @@ Copyright (c) 2021 Frank Proulx
 
 Objects
 
+
 ToDoList
   Properties
     Array of tasks
   Methods
-    getAllTasks()
-    getCompletedTasks()
-    getUncompletedTasks()
     assignId()
     addTask()
     removeTask()
+    getAllTasks()
+    getCompletedTasks()
+    getUncompletedTasks()
 Task
   Properties
     Complete (bool)
@@ -80,3 +81,20 @@ Code:
     let todo = new ToDoList();
     todo.tasks;
 Result: {}
+
+### Describe: ToDoList.prototype.assignId()
+Test: It should assign a unique ID to each task added to the to do list
+Code: 
+    let todo = new ToDoList();
+    todo.addTask("task1");
+    task1.id;
+Result: 1
+
+### Describe: addTask()
+Test: It should add the given task to the to do list
+Code: 
+    let todo = new ToDoList();
+    todo.addTask("task1");
+    todo.tasks;
+Result: {id: task}
+

@@ -16,3 +16,8 @@ ToDoList.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
 };
+
+ToDoList.prototype.addTask = function(task) {
+  task.id = this.assignId();
+  this.tasks[task.id] = task;
+};
