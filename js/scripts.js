@@ -6,3 +6,8 @@ function Task(description) {
 Task.prototype.completeTask = function() {
   this.complete = true;
 };
+
+function ToDoList() {
+  this.tasks = {};
+}
+

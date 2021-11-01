@@ -73,3 +73,10 @@ Code:
     task1.completeTask()
     task1.complete;
 Result: "true"
+
+### Describe: ToDoList()
+Test: It should return an object with a single property of "tasks" containing an empty object
+Code:
+    let todo = new ToDoList();
+    todo.tasks;
+Result: {}
