@@ -29,3 +29,10 @@ ToDoList.prototype.removeTask = function(id) {
   delete this.tasks[id];
   return true;
 };
+
+ToDoList.prototype.getTask = function(id) {
+  if (this.tasks[id] != undefined) {
+    return this.tasks[id];
+  }
+  return false;
+}

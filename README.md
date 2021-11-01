@@ -49,9 +49,8 @@ ToDoList
     assignId()
     addTask()
     removeTask()
-    getAllTasks()
-    getCompletedTasks()
-    getUncompletedTasks()
+    getTask()
+
 Task
   Properties
     Complete (bool)
@@ -104,3 +103,9 @@ Code:
     todo.removeTask("task1");
     todo.tasks;
 Result: {}
+
+### Describe: ToDoList.prototype.getTask()
+Test: It should return the task object given the id
+Code:
+    todo.getTask(id);
+Result: {Task}
