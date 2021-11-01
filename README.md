@@ -36,3 +36,31 @@ _{This is a detailed description of your application. Give as much detail as nee
 If you have any issues, questions, ideas or concerns, please reach out to me at my email and/or make a contribution to the code via GitHub.
 
 Copyright (c) 2021 Frank Proulx
+
+## Tests
+
+Objects
+
+ToDoList
+  Properties
+    Array of tasks
+  Methods
+    getAllTasks()
+    getCompletedTasks()
+    getUncompletedTasks()
+    assignId()
+Task
+  Properties
+    Complete (bool)
+    Description (string)
+    id (int)
+    
+  Methods
+    completeTask()
+
+### Describe: Task()
+Test: It should return an object with properties of complete (bool), description (string)
+Code: 
+    let task1 = new Task("ToDo", false);
+    task1.description;
+Result: "ToDo"
